@@ -1,0 +1,237 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="872" viewBox="0 0 1140 872" role="img">
+<title>AXI4-Lite handshakes</title>
+<desc>Directed simulation VCD · guides mark valid/ready handshakes. Values and timing are derived from the directed simulation VCD.</desc>
+<style>
+text { font-family: system-ui, sans-serif; fill: #17273b; }
+.canvas { fill: #fff; }
+.panel { fill: #f7f9fc; stroke: #d7e1ec; }
+.title { font-size: 30px; font-weight: 650; }
+.source { font-size: 14px; fill: #465b71; }
+.panel-title { font-size: 19px; font-weight: 650; }
+.subtitle { font-size: 13px; fill: #40576f; }
+.signal, .value, .tick, .annotation { font-family: ui-monospace, monospace; }
+.signal { font-size: 13px; font-weight: 600; }
+.value, .tick, .annotation { font-size: 11px; }
+.tick { fill: #465b71; }
+.annotation { fill: #985117; font-weight: 650; }
+.grid { stroke: #dce4ef; stroke-width: 1; }
+.digital { stroke: #164974; stroke-width: 1.8; }
+.undefined { stroke: #647789; stroke-width: 1.5; stroke-dasharray: 3 3; }
+.bus { fill: #e8f1fb; stroke: #537798; stroke-width: 1; }
+.marker { stroke: #ab6b36; stroke-width: 1; stroke-dasharray: 4 3; }
+</style>
+<rect width="100%" height="100%" class="canvas"/>
+<text x="22.00" y="43.00" class="title" text-anchor="start">AXI4-Lite handshakes</text>
+<text x="22.00" y="70.00" class="source" text-anchor="start">Directed simulation VCD · guides mark valid/ready handshakes</text>
+<rect x="22.00" y="100" width="1096.00" height="398" rx="7" class="panel"/>
+<text x="37.00" y="126.00" class="panel-title" text-anchor="start">Address-first write</text>
+<text x="37.00" y="146.00" class="subtitle" text-anchor="start">AW is accepted 40 ns before W · BVALID holds the response until BREADY</text>
+<line x1="150.65" y1="168.00" x2="150.65" y2="448.00" class="grid"/>
+<text x="150.65" y="464.00" class="tick" text-anchor="middle">13100</text>
+<line x1="301.27" y1="168.00" x2="301.27" y2="448.00" class="grid"/>
+<text x="301.27" y="464.00" class="tick" text-anchor="middle">13120</text>
+<line x1="451.88" y1="168.00" x2="451.88" y2="448.00" class="grid"/>
+<text x="451.88" y="464.00" class="tick" text-anchor="middle">13140</text>
+<line x1="602.50" y1="168.00" x2="602.50" y2="448.00" class="grid"/>
+<text x="602.50" y="464.00" class="tick" text-anchor="middle">13160</text>
+<line x1="753.12" y1="168.00" x2="753.12" y2="448.00" class="grid"/>
+<text x="753.12" y="464.00" class="tick" text-anchor="middle">13180</text>
+<line x1="903.73" y1="168.00" x2="903.73" y2="448.00" class="grid"/>
+<text x="903.73" y="464.00" class="tick" text-anchor="middle">13200</text>
+<line x1="1054.35" y1="168.00" x2="1054.35" y2="448.00" class="grid"/>
+<text x="1054.35" y="464.00" class="tick" text-anchor="middle">13220</text>
+<text x="1092.00" y="481.00" class="tick" text-anchor="end">Simulation time (ns)</text>
+<line x1="188.31" y1="168.00" x2="188.31" y2="448.00" class="marker"/>
+<text x="188.31" y="161.00" class="annotation" text-anchor="middle">AW</text>
+<line x1="489.54" y1="168.00" x2="489.54" y2="448.00" class="marker"/>
+<text x="489.54" y="161.00" class="annotation" text-anchor="middle">W</text>
+<line x1="1016.69" y1="168.00" x2="1016.69" y2="448.00" class="marker"/>
+<text x="1016.69" y="161.00" class="annotation" text-anchor="middle">B</text>
+<text x="103.00" y="186.00" class="signal" text-anchor="end">ACLK</text>
+<line x1="113.00" y1="174.00" x2="150.65" y2="174.00" class="digital"/>
+<line x1="150.65" y1="174.00" x2="150.65" y2="190.00" class="digital"/>
+<line x1="150.65" y1="190.00" x2="188.31" y2="190.00" class="digital"/>
+<line x1="188.31" y1="190.00" x2="188.31" y2="174.00" class="digital"/>
+<line x1="188.31" y1="174.00" x2="225.96" y2="174.00" class="digital"/>
+<line x1="225.96" y1="174.00" x2="225.96" y2="190.00" class="digital"/>
+<line x1="225.96" y1="190.00" x2="263.62" y2="190.00" class="digital"/>
+<line x1="263.62" y1="190.00" x2="263.62" y2="174.00" class="digital"/>
+<line x1="263.62" y1="174.00" x2="301.27" y2="174.00" class="digital"/>
+<line x1="301.27" y1="174.00" x2="301.27" y2="190.00" class="digital"/>
+<line x1="301.27" y1="190.00" x2="338.92" y2="190.00" class="digital"/>
+<line x1="338.92" y1="190.00" x2="338.92" y2="174.00" class="digital"/>
+<line x1="338.92" y1="174.00" x2="376.58" y2="174.00" class="digital"/>
+<line x1="376.58" y1="174.00" x2="376.58" y2="190.00" class="digital"/>
+<line x1="376.58" y1="190.00" x2="414.23" y2="190.00" class="digital"/>
+<line x1="414.23" y1="190.00" x2="414.23" y2="174.00" class="digital"/>
+<line x1="414.23" y1="174.00" x2="451.88" y2="174.00" class="digital"/>
+<line x1="451.88" y1="174.00" x2="451.88" y2="190.00" class="digital"/>
+<line x1="451.88" y1="190.00" x2="489.54" y2="190.00" class="digital"/>
+<line x1="489.54" y1="190.00" x2="489.54" y2="174.00" class="digital"/>
+<line x1="489.54" y1="174.00" x2="527.19" y2="174.00" class="digital"/>
+<line x1="527.19" y1="174.00" x2="527.19" y2="190.00" class="digital"/>
+<line x1="527.19" y1="190.00" x2="564.85" y2="190.00" class="digital"/>
+<line x1="564.85" y1="190.00" x2="564.85" y2="174.00" class="digital"/>
+<line x1="564.85" y1="174.00" x2="602.50" y2="174.00" class="digital"/>
+<line x1="602.50" y1="174.00" x2="602.50" y2="190.00" class="digital"/>
+<line x1="602.50" y1="190.00" x2="640.15" y2="190.00" class="digital"/>
+<line x1="640.15" y1="190.00" x2="640.15" y2="174.00" class="digital"/>
+<line x1="640.15" y1="174.00" x2="677.81" y2="174.00" class="digital"/>
+<line x1="677.81" y1="174.00" x2="677.81" y2="190.00" class="digital"/>
+<line x1="677.81" y1="190.00" x2="715.46" y2="190.00" class="digital"/>
+<line x1="715.46" y1="190.00" x2="715.46" y2="174.00" class="digital"/>
+<line x1="715.46" y1="174.00" x2="753.12" y2="174.00" class="digital"/>
+<line x1="753.12" y1="174.00" x2="753.12" y2="190.00" class="digital"/>
+<line x1="753.12" y1="190.00" x2="790.77" y2="190.00" class="digital"/>
+<line x1="790.77" y1="190.00" x2="790.77" y2="174.00" class="digital"/>
+<line x1="790.77" y1="174.00" x2="828.42" y2="174.00" class="digital"/>
+<line x1="828.42" y1="174.00" x2="828.42" y2="190.00" class="digital"/>
+<line x1="828.42" y1="190.00" x2="866.08" y2="190.00" class="digital"/>
+<line x1="866.08" y1="190.00" x2="866.08" y2="174.00" class="digital"/>
+<line x1="866.08" y1="174.00" x2="903.73" y2="174.00" class="digital"/>
+<line x1="903.73" y1="174.00" x2="903.73" y2="190.00" class="digital"/>
+<line x1="903.73" y1="190.00" x2="941.38" y2="190.00" class="digital"/>
+<line x1="941.38" y1="190.00" x2="941.38" y2="174.00" class="digital"/>
+<line x1="941.38" y1="174.00" x2="979.04" y2="174.00" class="digital"/>
+<line x1="979.04" y1="174.00" x2="979.04" y2="190.00" class="digital"/>
+<line x1="979.04" y1="190.00" x2="1016.69" y2="190.00" class="digital"/>
+<line x1="1016.69" y1="190.00" x2="1016.69" y2="174.00" class="digital"/>
+<line x1="1016.69" y1="174.00" x2="1054.35" y2="174.00" class="digital"/>
+<line x1="1054.35" y1="174.00" x2="1054.35" y2="190.00" class="digital"/>
+<line x1="1054.35" y1="190.00" x2="1092.00" y2="190.00" class="digital"/>
+<text x="103.00" y="214.00" class="signal" text-anchor="end">AWVALID</text>
+<line x1="113.00" y1="218.00" x2="150.65" y2="218.00" class="digital"/>
+<line x1="150.65" y1="218.00" x2="150.65" y2="202.00" class="digital"/>
+<line x1="150.65" y1="202.00" x2="225.96" y2="202.00" class="digital"/>
+<line x1="225.96" y1="202.00" x2="225.96" y2="218.00" class="digital"/>
+<line x1="225.96" y1="218.00" x2="1092.00" y2="218.00" class="digital"/>
+<text x="103.00" y="242.00" class="signal" text-anchor="end">AWREADY</text>
+<line x1="113.00" y1="230.00" x2="188.31" y2="230.00" class="digital"/>
+<line x1="188.31" y1="230.00" x2="188.31" y2="246.00" class="digital"/>
+<line x1="188.31" y1="246.00" x2="1016.69" y2="246.00" class="digital"/>
+<line x1="1016.69" y1="246.00" x2="1016.69" y2="230.00" class="digital"/>
+<line x1="1016.69" y1="230.00" x2="1092.00" y2="230.00" class="digital"/>
+<text x="103.00" y="270.00" class="signal" text-anchor="end">AWADDR</text>
+<polygon points="113.00,266.00 116.00,258.00 147.65,258.00 150.65,266.00 147.65,274.00 116.00,274.00" class="bus"/>
+<text x="131.83" y="270.00" class="value" text-anchor="middle">000</text>
+<polygon points="150.65,266.00 153.65,258.00 1089.00,258.00 1092.00,266.00 1089.00,274.00 153.65,274.00" class="bus"/>
+<text x="621.33" y="270.00" class="value" text-anchor="middle">004</text>
+<text x="103.00" y="298.00" class="signal" text-anchor="end">WVALID</text>
+<line x1="113.00" y1="302.00" x2="451.88" y2="302.00" class="digital"/>
+<line x1="451.88" y1="302.00" x2="451.88" y2="286.00" class="digital"/>
+<line x1="451.88" y1="286.00" x2="527.19" y2="286.00" class="digital"/>
+<line x1="527.19" y1="286.00" x2="527.19" y2="302.00" class="digital"/>
+<line x1="527.19" y1="302.00" x2="1092.00" y2="302.00" class="digital"/>
+<text x="103.00" y="326.00" class="signal" text-anchor="end">WREADY</text>
+<line x1="113.00" y1="314.00" x2="489.54" y2="314.00" class="digital"/>
+<line x1="489.54" y1="314.00" x2="489.54" y2="330.00" class="digital"/>
+<line x1="489.54" y1="330.00" x2="1016.69" y2="330.00" class="digital"/>
+<line x1="1016.69" y1="330.00" x2="1016.69" y2="314.00" class="digital"/>
+<line x1="1016.69" y1="314.00" x2="1092.00" y2="314.00" class="digital"/>
+<text x="103.00" y="354.00" class="signal" text-anchor="end">WDATA</text>
+<polygon points="113.00,350.00 116.00,342.00 147.65,342.00 150.65,350.00 147.65,358.00 116.00,358.00" class="bus"/>
+<polygon points="150.65,350.00 153.65,342.00 1089.00,342.00 1092.00,350.00 1089.00,358.00 153.65,358.00" class="bus"/>
+<text x="621.33" y="354.00" class="value" text-anchor="middle">000000A5</text>
+<text x="103.00" y="382.00" class="signal" text-anchor="end">BVALID</text>
+<line x1="113.00" y1="386.00" x2="564.85" y2="386.00" class="digital"/>
+<line x1="564.85" y1="386.00" x2="564.85" y2="370.00" class="digital"/>
+<line x1="564.85" y1="370.00" x2="1016.69" y2="370.00" class="digital"/>
+<line x1="1016.69" y1="370.00" x2="1016.69" y2="386.00" class="digital"/>
+<line x1="1016.69" y1="386.00" x2="1092.00" y2="386.00" class="digital"/>
+<text x="103.00" y="410.00" class="signal" text-anchor="end">BREADY</text>
+<line x1="113.00" y1="414.00" x2="979.04" y2="414.00" class="digital"/>
+<line x1="979.04" y1="414.00" x2="979.04" y2="398.00" class="digital"/>
+<line x1="979.04" y1="398.00" x2="1054.35" y2="398.00" class="digital"/>
+<line x1="1054.35" y1="398.00" x2="1054.35" y2="414.00" class="digital"/>
+<line x1="1054.35" y1="414.00" x2="1092.00" y2="414.00" class="digital"/>
+<text x="103.00" y="438.00" class="signal" text-anchor="end">BRESP</text>
+<polygon points="113.00,434.00 116.00,426.00 1089.00,426.00 1092.00,434.00 1089.00,442.00 116.00,442.00" class="bus"/>
+<text x="602.50" y="438.00" class="value" text-anchor="middle">0</text>
+<rect x="22.00" y="514" width="1096.00" height="342" rx="7" class="panel"/>
+<text x="37.00" y="540.00" class="panel-title" text-anchor="start">Read response backpressure</text>
+<text x="37.00" y="560.00" class="subtitle" text-anchor="start">RVALID, RDATA and RRESP are visible while RREADY is low</text>
+<line x1="182.93" y1="582.00" x2="182.93" y2="806.00" class="grid"/>
+<text x="182.93" y="822.00" class="tick" text-anchor="middle">13340</text>
+<line x1="322.79" y1="582.00" x2="322.79" y2="806.00" class="grid"/>
+<text x="322.79" y="822.00" class="tick" text-anchor="middle">13350</text>
+<line x1="462.64" y1="582.00" x2="462.64" y2="806.00" class="grid"/>
+<text x="462.64" y="822.00" class="tick" text-anchor="middle">13360</text>
+<line x1="602.50" y1="582.00" x2="602.50" y2="806.00" class="grid"/>
+<text x="602.50" y="822.00" class="tick" text-anchor="middle">13370</text>
+<line x1="742.36" y1="582.00" x2="742.36" y2="806.00" class="grid"/>
+<text x="742.36" y="822.00" class="tick" text-anchor="middle">13380</text>
+<line x1="882.21" y1="582.00" x2="882.21" y2="806.00" class="grid"/>
+<text x="882.21" y="822.00" class="tick" text-anchor="middle">13390</text>
+<line x1="1022.07" y1="582.00" x2="1022.07" y2="806.00" class="grid"/>
+<text x="1022.07" y="822.00" class="tick" text-anchor="middle">13400</text>
+<text x="1092.00" y="839.00" class="tick" text-anchor="end">Simulation time (ns)</text>
+<line x1="252.86" y1="582.00" x2="252.86" y2="806.00" class="marker"/>
+<text x="252.86" y="575.00" class="annotation" text-anchor="middle">AR</text>
+<line x1="952.14" y1="582.00" x2="952.14" y2="806.00" class="marker"/>
+<text x="952.14" y="575.00" class="annotation" text-anchor="middle">R</text>
+<text x="103.00" y="600.00" class="signal" text-anchor="end">ACLK</text>
+<line x1="113.00" y1="588.00" x2="182.93" y2="588.00" class="digital"/>
+<line x1="182.93" y1="588.00" x2="182.93" y2="604.00" class="digital"/>
+<line x1="182.93" y1="604.00" x2="252.86" y2="604.00" class="digital"/>
+<line x1="252.86" y1="604.00" x2="252.86" y2="588.00" class="digital"/>
+<line x1="252.86" y1="588.00" x2="322.79" y2="588.00" class="digital"/>
+<line x1="322.79" y1="588.00" x2="322.79" y2="604.00" class="digital"/>
+<line x1="322.79" y1="604.00" x2="392.71" y2="604.00" class="digital"/>
+<line x1="392.71" y1="604.00" x2="392.71" y2="588.00" class="digital"/>
+<line x1="392.71" y1="588.00" x2="462.64" y2="588.00" class="digital"/>
+<line x1="462.64" y1="588.00" x2="462.64" y2="604.00" class="digital"/>
+<line x1="462.64" y1="604.00" x2="532.57" y2="604.00" class="digital"/>
+<line x1="532.57" y1="604.00" x2="532.57" y2="588.00" class="digital"/>
+<line x1="532.57" y1="588.00" x2="602.50" y2="588.00" class="digital"/>
+<line x1="602.50" y1="588.00" x2="602.50" y2="604.00" class="digital"/>
+<line x1="602.50" y1="604.00" x2="672.43" y2="604.00" class="digital"/>
+<line x1="672.43" y1="604.00" x2="672.43" y2="588.00" class="digital"/>
+<line x1="672.43" y1="588.00" x2="742.36" y2="588.00" class="digital"/>
+<line x1="742.36" y1="588.00" x2="742.36" y2="604.00" class="digital"/>
+<line x1="742.36" y1="604.00" x2="812.29" y2="604.00" class="digital"/>
+<line x1="812.29" y1="604.00" x2="812.29" y2="588.00" class="digital"/>
+<line x1="812.29" y1="588.00" x2="882.21" y2="588.00" class="digital"/>
+<line x1="882.21" y1="588.00" x2="882.21" y2="604.00" class="digital"/>
+<line x1="882.21" y1="604.00" x2="952.14" y2="604.00" class="digital"/>
+<line x1="952.14" y1="604.00" x2="952.14" y2="588.00" class="digital"/>
+<line x1="952.14" y1="588.00" x2="1022.07" y2="588.00" class="digital"/>
+<line x1="1022.07" y1="588.00" x2="1022.07" y2="604.00" class="digital"/>
+<line x1="1022.07" y1="604.00" x2="1092.00" y2="604.00" class="digital"/>
+<text x="103.00" y="628.00" class="signal" text-anchor="end">ARVALID</text>
+<line x1="113.00" y1="632.00" x2="182.93" y2="632.00" class="digital"/>
+<line x1="182.93" y1="632.00" x2="182.93" y2="616.00" class="digital"/>
+<line x1="182.93" y1="616.00" x2="322.79" y2="616.00" class="digital"/>
+<line x1="322.79" y1="616.00" x2="322.79" y2="632.00" class="digital"/>
+<line x1="322.79" y1="632.00" x2="1092.00" y2="632.00" class="digital"/>
+<text x="103.00" y="656.00" class="signal" text-anchor="end">ARREADY</text>
+<line x1="113.00" y1="644.00" x2="252.86" y2="644.00" class="digital"/>
+<line x1="252.86" y1="644.00" x2="252.86" y2="660.00" class="digital"/>
+<line x1="252.86" y1="660.00" x2="952.14" y2="660.00" class="digital"/>
+<line x1="952.14" y1="660.00" x2="952.14" y2="644.00" class="digital"/>
+<line x1="952.14" y1="644.00" x2="1092.00" y2="644.00" class="digital"/>
+<text x="103.00" y="684.00" class="signal" text-anchor="end">ARADDR</text>
+<polygon points="113.00,680.00 116.00,672.00 179.93,672.00 182.93,680.00 179.93,688.00 116.00,688.00" class="bus"/>
+<text x="147.96" y="684.00" class="value" text-anchor="middle">000</text>
+<polygon points="182.93,680.00 185.93,672.00 1089.00,672.00 1092.00,680.00 1089.00,688.00 185.93,688.00" class="bus"/>
+<text x="637.46" y="684.00" class="value" text-anchor="middle">004</text>
+<text x="103.00" y="712.00" class="signal" text-anchor="end">RVALID</text>
+<line x1="113.00" y1="716.00" x2="392.71" y2="716.00" class="digital"/>
+<line x1="392.71" y1="716.00" x2="392.71" y2="700.00" class="digital"/>
+<line x1="392.71" y1="700.00" x2="952.14" y2="700.00" class="digital"/>
+<line x1="952.14" y1="700.00" x2="952.14" y2="716.00" class="digital"/>
+<line x1="952.14" y1="716.00" x2="1092.00" y2="716.00" class="digital"/>
+<text x="103.00" y="740.00" class="signal" text-anchor="end">RREADY</text>
+<line x1="113.00" y1="744.00" x2="882.21" y2="744.00" class="digital"/>
+<line x1="882.21" y1="744.00" x2="882.21" y2="728.00" class="digital"/>
+<line x1="882.21" y1="728.00" x2="1022.07" y2="728.00" class="digital"/>
+<line x1="1022.07" y1="728.00" x2="1022.07" y2="744.00" class="digital"/>
+<line x1="1022.07" y1="744.00" x2="1092.00" y2="744.00" class="digital"/>
+<text x="103.00" y="768.00" class="signal" text-anchor="end">RDATA</text>
+<polygon points="113.00,764.00 116.00,756.00 389.71,756.00 392.71,764.00 389.71,772.00 116.00,772.00" class="bus"/>
+<text x="252.86" y="768.00" class="value" text-anchor="middle">52504701</text>
+<polygon points="392.71,764.00 395.71,756.00 1089.00,756.00 1092.00,764.00 1089.00,772.00 395.71,772.00" class="bus"/>
+<text x="742.36" y="768.00" class="value" text-anchor="middle">000012A5</text>
+<text x="103.00" y="796.00" class="signal" text-anchor="end">RRESP</text>
+<polygon points="113.00,792.00 116.00,784.00 1089.00,784.00 1092.00,792.00 1089.00,800.00 116.00,800.00" class="bus"/>
+<text x="602.50" y="796.00" class="value" text-anchor="middle">0</text>
+</svg>

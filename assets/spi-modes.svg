@@ -1,0 +1,488 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="592" viewBox="0 0 1140 592" role="img">
+<title>SPI clock modes</title>
+<desc>Directed simulation VCD · numbered guides mark sample edges · data shown in wire order. Values and timing are derived from the directed simulation VCD.</desc>
+<style>
+text { font-family: system-ui, sans-serif; fill: #17273b; }
+.canvas { fill: #fff; }
+.panel { fill: #f7f9fc; stroke: #d7e1ec; }
+.title { font-size: 30px; font-weight: 650; }
+.source { font-size: 14px; fill: #465b71; }
+.panel-title { font-size: 19px; font-weight: 650; }
+.subtitle { font-size: 13px; fill: #40576f; }
+.signal, .value, .tick, .annotation { font-family: ui-monospace, monospace; }
+.signal { font-size: 13px; font-weight: 600; }
+.value, .tick, .annotation { font-size: 11px; }
+.tick { fill: #465b71; }
+.annotation { fill: #985117; font-weight: 650; }
+.grid { stroke: #dce4ef; stroke-width: 1; }
+.digital { stroke: #164974; stroke-width: 1.8; }
+.undefined { stroke: #647789; stroke-width: 1.5; stroke-dasharray: 3 3; }
+.bus { fill: #e8f1fb; stroke: #537798; stroke-width: 1; }
+.marker { stroke: #ab6b36; stroke-width: 1; stroke-dasharray: 4 3; }
+</style>
+<rect width="100%" height="100%" class="canvas"/>
+<text x="22.00" y="43.00" class="title" text-anchor="start">SPI clock modes</text>
+<text x="22.00" y="70.00" class="source" text-anchor="start">Directed simulation VCD · numbered guides mark sample edges · data shown in wire order</text>
+<rect x="22.00" y="100" width="540.00" height="230" rx="7" class="panel"/>
+<text x="37.00" y="126.00" class="panel-title" text-anchor="start">Mode 0   CPOL 0 / CPHA 0</text>
+<text x="37.00" y="146.00" class="subtitle" text-anchor="start">8 bits · MOSI 10100110 · MISO 00111011 · half-period 20 ns</text>
+<line x1="153.70" y1="168.00" x2="153.70" y2="280.00" class="grid"/>
+<text x="153.70" y="296.00" class="tick" text-anchor="middle">1600</text>
+<line x1="271.33" y1="168.00" x2="271.33" y2="280.00" class="grid"/>
+<text x="271.33" y="296.00" class="tick" text-anchor="middle">1700</text>
+<line x1="388.96" y1="168.00" x2="388.96" y2="280.00" class="grid"/>
+<text x="388.96" y="296.00" class="tick" text-anchor="middle">1800</text>
+<line x1="506.59" y1="168.00" x2="506.59" y2="280.00" class="grid"/>
+<text x="506.59" y="296.00" class="tick" text-anchor="middle">1900</text>
+<text x="536.00" y="313.00" class="tick" text-anchor="end">Simulation time (ns)</text>
+<line x1="136.05" y1="168.00" x2="136.05" y2="280.00" class="marker"/>
+<text x="136.05" y="161.00" class="annotation" text-anchor="middle">1</text>
+<line x1="183.11" y1="168.00" x2="183.11" y2="280.00" class="marker"/>
+<text x="183.11" y="161.00" class="annotation" text-anchor="middle">2</text>
+<line x1="230.16" y1="168.00" x2="230.16" y2="280.00" class="marker"/>
+<text x="230.16" y="161.00" class="annotation" text-anchor="middle">3</text>
+<line x1="277.21" y1="168.00" x2="277.21" y2="280.00" class="marker"/>
+<text x="277.21" y="161.00" class="annotation" text-anchor="middle">4</text>
+<line x1="324.26" y1="168.00" x2="324.26" y2="280.00" class="marker"/>
+<text x="324.26" y="161.00" class="annotation" text-anchor="middle">5</text>
+<line x1="371.32" y1="168.00" x2="371.32" y2="280.00" class="marker"/>
+<text x="371.32" y="161.00" class="annotation" text-anchor="middle">6</text>
+<line x1="418.37" y1="168.00" x2="418.37" y2="280.00" class="marker"/>
+<text x="418.37" y="161.00" class="annotation" text-anchor="middle">7</text>
+<line x1="465.42" y1="168.00" x2="465.42" y2="280.00" class="marker"/>
+<text x="465.42" y="161.00" class="annotation" text-anchor="middle">8</text>
+<text x="79.00" y="186.00" class="signal" text-anchor="end">CS0#</text>
+<line x1="89.00" y1="174.00" x2="112.53" y2="174.00" class="digital"/>
+<line x1="112.53" y1="174.00" x2="112.53" y2="190.00" class="digital"/>
+<line x1="112.53" y1="190.00" x2="512.47" y2="190.00" class="digital"/>
+<line x1="512.47" y1="190.00" x2="512.47" y2="174.00" class="digital"/>
+<line x1="512.47" y1="174.00" x2="536.00" y2="174.00" class="digital"/>
+<text x="79.00" y="214.00" class="signal" text-anchor="end">SCLK</text>
+<line x1="89.00" y1="218.00" x2="136.05" y2="218.00" class="digital"/>
+<line x1="136.05" y1="218.00" x2="136.05" y2="202.00" class="digital"/>
+<line x1="136.05" y1="202.00" x2="159.58" y2="202.00" class="digital"/>
+<line x1="159.58" y1="202.00" x2="159.58" y2="218.00" class="digital"/>
+<line x1="159.58" y1="218.00" x2="183.11" y2="218.00" class="digital"/>
+<line x1="183.11" y1="218.00" x2="183.11" y2="202.00" class="digital"/>
+<line x1="183.11" y1="202.00" x2="206.63" y2="202.00" class="digital"/>
+<line x1="206.63" y1="202.00" x2="206.63" y2="218.00" class="digital"/>
+<line x1="206.63" y1="218.00" x2="230.16" y2="218.00" class="digital"/>
+<line x1="230.16" y1="218.00" x2="230.16" y2="202.00" class="digital"/>
+<line x1="230.16" y1="202.00" x2="253.68" y2="202.00" class="digital"/>
+<line x1="253.68" y1="202.00" x2="253.68" y2="218.00" class="digital"/>
+<line x1="253.68" y1="218.00" x2="277.21" y2="218.00" class="digital"/>
+<line x1="277.21" y1="218.00" x2="277.21" y2="202.00" class="digital"/>
+<line x1="277.21" y1="202.00" x2="300.74" y2="202.00" class="digital"/>
+<line x1="300.74" y1="202.00" x2="300.74" y2="218.00" class="digital"/>
+<line x1="300.74" y1="218.00" x2="324.26" y2="218.00" class="digital"/>
+<line x1="324.26" y1="218.00" x2="324.26" y2="202.00" class="digital"/>
+<line x1="324.26" y1="202.00" x2="347.79" y2="202.00" class="digital"/>
+<line x1="347.79" y1="202.00" x2="347.79" y2="218.00" class="digital"/>
+<line x1="347.79" y1="218.00" x2="371.32" y2="218.00" class="digital"/>
+<line x1="371.32" y1="218.00" x2="371.32" y2="202.00" class="digital"/>
+<line x1="371.32" y1="202.00" x2="394.84" y2="202.00" class="digital"/>
+<line x1="394.84" y1="202.00" x2="394.84" y2="218.00" class="digital"/>
+<line x1="394.84" y1="218.00" x2="418.37" y2="218.00" class="digital"/>
+<line x1="418.37" y1="218.00" x2="418.37" y2="202.00" class="digital"/>
+<line x1="418.37" y1="202.00" x2="441.89" y2="202.00" class="digital"/>
+<line x1="441.89" y1="202.00" x2="441.89" y2="218.00" class="digital"/>
+<line x1="441.89" y1="218.00" x2="465.42" y2="218.00" class="digital"/>
+<line x1="465.42" y1="218.00" x2="465.42" y2="202.00" class="digital"/>
+<line x1="465.42" y1="202.00" x2="488.95" y2="202.00" class="digital"/>
+<line x1="488.95" y1="202.00" x2="488.95" y2="218.00" class="digital"/>
+<line x1="488.95" y1="218.00" x2="536.00" y2="218.00" class="digital"/>
+<text x="79.00" y="242.00" class="signal" text-anchor="end">MOSI</text>
+<line x1="89.00" y1="246.00" x2="112.53" y2="246.00" class="digital"/>
+<line x1="112.53" y1="246.00" x2="112.53" y2="230.00" class="digital"/>
+<line x1="112.53" y1="230.00" x2="159.58" y2="230.00" class="digital"/>
+<line x1="159.58" y1="230.00" x2="159.58" y2="246.00" class="digital"/>
+<line x1="159.58" y1="246.00" x2="206.63" y2="246.00" class="digital"/>
+<line x1="206.63" y1="246.00" x2="206.63" y2="230.00" class="digital"/>
+<line x1="206.63" y1="230.00" x2="253.68" y2="230.00" class="digital"/>
+<line x1="253.68" y1="230.00" x2="253.68" y2="246.00" class="digital"/>
+<line x1="253.68" y1="246.00" x2="347.79" y2="246.00" class="digital"/>
+<line x1="347.79" y1="246.00" x2="347.79" y2="230.00" class="digital"/>
+<line x1="347.79" y1="230.00" x2="441.89" y2="230.00" class="digital"/>
+<line x1="441.89" y1="230.00" x2="441.89" y2="246.00" class="digital"/>
+<line x1="441.89" y1="246.00" x2="536.00" y2="246.00" class="digital"/>
+<text x="79.00" y="270.00" class="signal" text-anchor="end">MISO</text>
+<line x1="89.00" y1="274.00" x2="207.81" y2="274.00" class="digital"/>
+<line x1="207.81" y1="274.00" x2="207.81" y2="258.00" class="digital"/>
+<line x1="207.81" y1="258.00" x2="348.97" y2="258.00" class="digital"/>
+<line x1="348.97" y1="258.00" x2="348.97" y2="274.00" class="digital"/>
+<line x1="348.97" y1="274.00" x2="396.02" y2="274.00" class="digital"/>
+<line x1="396.02" y1="274.00" x2="396.02" y2="258.00" class="digital"/>
+<line x1="396.02" y1="258.00" x2="513.65" y2="258.00" class="digital"/>
+<line x1="513.65" y1="258.00" x2="513.65" y2="274.00" class="digital"/>
+<line x1="513.65" y1="274.00" x2="536.00" y2="274.00" class="digital"/>
+<rect x="578.00" y="100" width="540.00" height="230" rx="7" class="panel"/>
+<text x="593.00" y="126.00" class="panel-title" text-anchor="start">Mode 1   CPOL 0 / CPHA 1</text>
+<text x="593.00" y="146.00" class="subtitle" text-anchor="start">9 bits · MOSI 111001011 · MISO 101100110 · half-period 30 ns</text>
+<line x1="648.55" y1="168.00" x2="648.55" y2="280.00" class="grid"/>
+<text x="648.55" y="296.00" class="tick" text-anchor="middle">2200</text>
+<line x1="790.45" y1="168.00" x2="790.45" y2="280.00" class="grid"/>
+<text x="790.45" y="296.00" class="tick" text-anchor="middle">2400</text>
+<line x1="932.36" y1="168.00" x2="932.36" y2="280.00" class="grid"/>
+<text x="932.36" y="296.00" class="tick" text-anchor="middle">2600</text>
+<line x1="1074.26" y1="168.00" x2="1074.26" y2="280.00" class="grid"/>
+<text x="1074.26" y="296.00" class="tick" text-anchor="middle">2800</text>
+<text x="1092.00" y="313.00" class="tick" text-anchor="end">Simulation time (ns)</text>
+<line x1="708.86" y1="168.00" x2="708.86" y2="280.00" class="marker"/>
+<text x="708.86" y="161.00" class="annotation" text-anchor="middle">1</text>
+<line x1="751.43" y1="168.00" x2="751.43" y2="280.00" class="marker"/>
+<text x="751.43" y="161.00" class="annotation" text-anchor="middle">2</text>
+<line x1="794.00" y1="168.00" x2="794.00" y2="280.00" class="marker"/>
+<text x="794.00" y="161.00" class="annotation" text-anchor="middle">3</text>
+<line x1="836.57" y1="168.00" x2="836.57" y2="280.00" class="marker"/>
+<text x="836.57" y="161.00" class="annotation" text-anchor="middle">4</text>
+<line x1="879.14" y1="168.00" x2="879.14" y2="280.00" class="marker"/>
+<text x="879.14" y="161.00" class="annotation" text-anchor="middle">5</text>
+<line x1="921.71" y1="168.00" x2="921.71" y2="280.00" class="marker"/>
+<text x="921.71" y="161.00" class="annotation" text-anchor="middle">6</text>
+<line x1="964.29" y1="168.00" x2="964.29" y2="280.00" class="marker"/>
+<text x="964.29" y="161.00" class="annotation" text-anchor="middle">7</text>
+<line x1="1006.86" y1="168.00" x2="1006.86" y2="280.00" class="marker"/>
+<text x="1006.86" y="161.00" class="annotation" text-anchor="middle">8</text>
+<line x1="1049.43" y1="168.00" x2="1049.43" y2="280.00" class="marker"/>
+<text x="1049.43" y="161.00" class="annotation" text-anchor="middle">9</text>
+<text x="635.00" y="186.00" class="signal" text-anchor="end">CS1#</text>
+<line x1="645.00" y1="174.00" x2="666.29" y2="174.00" class="digital"/>
+<line x1="666.29" y1="174.00" x2="666.29" y2="190.00" class="digital"/>
+<line x1="666.29" y1="190.00" x2="1070.71" y2="190.00" class="digital"/>
+<line x1="1070.71" y1="190.00" x2="1070.71" y2="174.00" class="digital"/>
+<line x1="1070.71" y1="174.00" x2="1092.00" y2="174.00" class="digital"/>
+<text x="635.00" y="214.00" class="signal" text-anchor="end">SCLK</text>
+<line x1="645.00" y1="218.00" x2="687.57" y2="218.00" class="digital"/>
+<line x1="687.57" y1="218.00" x2="687.57" y2="202.00" class="digital"/>
+<line x1="687.57" y1="202.00" x2="708.86" y2="202.00" class="digital"/>
+<line x1="708.86" y1="202.00" x2="708.86" y2="218.00" class="digital"/>
+<line x1="708.86" y1="218.00" x2="730.14" y2="218.00" class="digital"/>
+<line x1="730.14" y1="218.00" x2="730.14" y2="202.00" class="digital"/>
+<line x1="730.14" y1="202.00" x2="751.43" y2="202.00" class="digital"/>
+<line x1="751.43" y1="202.00" x2="751.43" y2="218.00" class="digital"/>
+<line x1="751.43" y1="218.00" x2="772.71" y2="218.00" class="digital"/>
+<line x1="772.71" y1="218.00" x2="772.71" y2="202.00" class="digital"/>
+<line x1="772.71" y1="202.00" x2="794.00" y2="202.00" class="digital"/>
+<line x1="794.00" y1="202.00" x2="794.00" y2="218.00" class="digital"/>
+<line x1="794.00" y1="218.00" x2="815.29" y2="218.00" class="digital"/>
+<line x1="815.29" y1="218.00" x2="815.29" y2="202.00" class="digital"/>
+<line x1="815.29" y1="202.00" x2="836.57" y2="202.00" class="digital"/>
+<line x1="836.57" y1="202.00" x2="836.57" y2="218.00" class="digital"/>
+<line x1="836.57" y1="218.00" x2="857.86" y2="218.00" class="digital"/>
+<line x1="857.86" y1="218.00" x2="857.86" y2="202.00" class="digital"/>
+<line x1="857.86" y1="202.00" x2="879.14" y2="202.00" class="digital"/>
+<line x1="879.14" y1="202.00" x2="879.14" y2="218.00" class="digital"/>
+<line x1="879.14" y1="218.00" x2="900.43" y2="218.00" class="digital"/>
+<line x1="900.43" y1="218.00" x2="900.43" y2="202.00" class="digital"/>
+<line x1="900.43" y1="202.00" x2="921.71" y2="202.00" class="digital"/>
+<line x1="921.71" y1="202.00" x2="921.71" y2="218.00" class="digital"/>
+<line x1="921.71" y1="218.00" x2="943.00" y2="218.00" class="digital"/>
+<line x1="943.00" y1="218.00" x2="943.00" y2="202.00" class="digital"/>
+<line x1="943.00" y1="202.00" x2="964.29" y2="202.00" class="digital"/>
+<line x1="964.29" y1="202.00" x2="964.29" y2="218.00" class="digital"/>
+<line x1="964.29" y1="218.00" x2="985.57" y2="218.00" class="digital"/>
+<line x1="985.57" y1="218.00" x2="985.57" y2="202.00" class="digital"/>
+<line x1="985.57" y1="202.00" x2="1006.86" y2="202.00" class="digital"/>
+<line x1="1006.86" y1="202.00" x2="1006.86" y2="218.00" class="digital"/>
+<line x1="1006.86" y1="218.00" x2="1028.14" y2="218.00" class="digital"/>
+<line x1="1028.14" y1="218.00" x2="1028.14" y2="202.00" class="digital"/>
+<line x1="1028.14" y1="202.00" x2="1049.43" y2="202.00" class="digital"/>
+<line x1="1049.43" y1="202.00" x2="1049.43" y2="218.00" class="digital"/>
+<line x1="1049.43" y1="218.00" x2="1092.00" y2="218.00" class="digital"/>
+<text x="635.00" y="242.00" class="signal" text-anchor="end">MOSI</text>
+<line x1="645.00" y1="246.00" x2="687.57" y2="246.00" class="digital"/>
+<line x1="687.57" y1="246.00" x2="687.57" y2="230.00" class="digital"/>
+<line x1="687.57" y1="230.00" x2="815.29" y2="230.00" class="digital"/>
+<line x1="815.29" y1="230.00" x2="815.29" y2="246.00" class="digital"/>
+<line x1="815.29" y1="246.00" x2="900.43" y2="246.00" class="digital"/>
+<line x1="900.43" y1="246.00" x2="900.43" y2="230.00" class="digital"/>
+<line x1="900.43" y1="230.00" x2="943.00" y2="230.00" class="digital"/>
+<line x1="943.00" y1="230.00" x2="943.00" y2="246.00" class="digital"/>
+<line x1="943.00" y1="246.00" x2="985.57" y2="246.00" class="digital"/>
+<line x1="985.57" y1="246.00" x2="985.57" y2="230.00" class="digital"/>
+<line x1="985.57" y1="230.00" x2="1070.71" y2="230.00" class="digital"/>
+<line x1="1070.71" y1="230.00" x2="1070.71" y2="246.00" class="digital"/>
+<line x1="1070.71" y1="246.00" x2="1092.00" y2="246.00" class="digital"/>
+<text x="635.00" y="270.00" class="signal" text-anchor="end">MISO</text>
+<line x1="645.00" y1="274.00" x2="688.28" y2="274.00" class="digital"/>
+<line x1="688.28" y1="274.00" x2="688.28" y2="258.00" class="digital"/>
+<line x1="688.28" y1="258.00" x2="730.85" y2="258.00" class="digital"/>
+<line x1="730.85" y1="258.00" x2="730.85" y2="274.00" class="digital"/>
+<line x1="730.85" y1="274.00" x2="773.42" y2="274.00" class="digital"/>
+<line x1="773.42" y1="274.00" x2="773.42" y2="258.00" class="digital"/>
+<line x1="773.42" y1="258.00" x2="858.57" y2="258.00" class="digital"/>
+<line x1="858.57" y1="258.00" x2="858.57" y2="274.00" class="digital"/>
+<line x1="858.57" y1="274.00" x2="943.71" y2="274.00" class="digital"/>
+<line x1="943.71" y1="274.00" x2="943.71" y2="258.00" class="digital"/>
+<line x1="943.71" y1="258.00" x2="1028.85" y2="258.00" class="digital"/>
+<line x1="1028.85" y1="258.00" x2="1028.85" y2="274.00" class="digital"/>
+<line x1="1028.85" y1="274.00" x2="1092.00" y2="274.00" class="digital"/>
+<rect x="22.00" y="346" width="540.00" height="230" rx="7" class="panel"/>
+<text x="37.00" y="372.00" class="panel-title" text-anchor="start">Mode 2   CPOL 1 / CPHA 0</text>
+<text x="37.00" y="392.00" class="subtitle" text-anchor="start">1 bit · MOSI 1 · MISO 1 · half-period 10 ns</text>
+<line x1="133.70" y1="414.00" x2="133.70" y2="526.00" class="grid"/>
+<text x="133.70" y="542.00" class="tick" text-anchor="middle">3120</text>
+<line x1="223.10" y1="414.00" x2="223.10" y2="526.00" class="grid"/>
+<text x="223.10" y="542.00" class="tick" text-anchor="middle">3130</text>
+<line x1="312.50" y1="414.00" x2="312.50" y2="526.00" class="grid"/>
+<text x="312.50" y="542.00" class="tick" text-anchor="middle">3140</text>
+<line x1="401.90" y1="414.00" x2="401.90" y2="526.00" class="grid"/>
+<text x="401.90" y="542.00" class="tick" text-anchor="middle">3150</text>
+<line x1="491.30" y1="414.00" x2="491.30" y2="526.00" class="grid"/>
+<text x="491.30" y="542.00" class="tick" text-anchor="middle">3160</text>
+<text x="536.00" y="559.00" class="tick" text-anchor="end">Simulation time (ns)</text>
+<line x1="267.80" y1="414.00" x2="267.80" y2="526.00" class="marker"/>
+<text x="267.80" y="407.00" class="annotation" text-anchor="middle">1</text>
+<text x="79.00" y="432.00" class="signal" text-anchor="end">CS2#</text>
+<line x1="89.00" y1="420.00" x2="178.40" y2="420.00" class="digital"/>
+<line x1="178.40" y1="420.00" x2="178.40" y2="436.00" class="digital"/>
+<line x1="178.40" y1="436.00" x2="446.60" y2="436.00" class="digital"/>
+<line x1="446.60" y1="436.00" x2="446.60" y2="420.00" class="digital"/>
+<line x1="446.60" y1="420.00" x2="536.00" y2="420.00" class="digital"/>
+<text x="79.00" y="460.00" class="signal" text-anchor="end">SCLK</text>
+<line x1="89.00" y1="448.00" x2="267.80" y2="448.00" class="digital"/>
+<line x1="267.80" y1="448.00" x2="267.80" y2="464.00" class="digital"/>
+<line x1="267.80" y1="464.00" x2="357.20" y2="464.00" class="digital"/>
+<line x1="357.20" y1="464.00" x2="357.20" y2="448.00" class="digital"/>
+<line x1="357.20" y1="448.00" x2="536.00" y2="448.00" class="digital"/>
+<text x="79.00" y="488.00" class="signal" text-anchor="end">MOSI</text>
+<line x1="89.00" y1="492.00" x2="178.40" y2="492.00" class="digital"/>
+<line x1="178.40" y1="492.00" x2="178.40" y2="476.00" class="digital"/>
+<line x1="178.40" y1="476.00" x2="446.60" y2="476.00" class="digital"/>
+<line x1="446.60" y1="476.00" x2="446.60" y2="492.00" class="digital"/>
+<line x1="446.60" y1="492.00" x2="536.00" y2="492.00" class="digital"/>
+<text x="79.00" y="516.00" class="signal" text-anchor="end">MISO</text>
+<line x1="89.00" y1="520.00" x2="187.34" y2="520.00" class="digital"/>
+<line x1="187.34" y1="520.00" x2="187.34" y2="504.00" class="digital"/>
+<line x1="187.34" y1="504.00" x2="455.54" y2="504.00" class="digital"/>
+<line x1="455.54" y1="504.00" x2="455.54" y2="520.00" class="digital"/>
+<line x1="455.54" y1="520.00" x2="536.00" y2="520.00" class="digital"/>
+<rect x="578.00" y="346" width="540.00" height="230" rx="7" class="panel"/>
+<text x="593.00" y="372.00" class="panel-title" text-anchor="start">Mode 3   CPOL 1 / CPHA 1</text>
+<text x="593.00" y="392.00" class="subtitle" text-anchor="start">32 bits · MOSI 0x96000082 · MISO 0xD52684E7 · half-period 10 ns</text>
+<line x1="728.40" y1="414.00" x2="728.40" y2="526.00" class="grid"/>
+<text x="728.40" y="542.00" class="tick" text-anchor="middle">3600</text>
+<line x1="861.83" y1="414.00" x2="861.83" y2="526.00" class="grid"/>
+<text x="861.83" y="542.00" class="tick" text-anchor="middle">3800</text>
+<line x1="995.26" y1="414.00" x2="995.26" y2="526.00" class="grid"/>
+<text x="995.26" y="542.00" class="tick" text-anchor="middle">4000</text>
+<text x="1092.00" y="559.00" class="tick" text-anchor="end">Simulation time (ns)</text>
+<line x1="665.01" y1="414.00" x2="665.01" y2="526.00" class="marker"/>
+<text x="665.01" y="407.00" class="annotation" text-anchor="middle">1</text>
+<line x1="718.39" y1="414.00" x2="718.39" y2="526.00" class="marker"/>
+<text x="718.39" y="407.00" class="annotation" text-anchor="middle">5</text>
+<line x1="771.76" y1="414.00" x2="771.76" y2="526.00" class="marker"/>
+<text x="771.76" y="407.00" class="annotation" text-anchor="middle">9</text>
+<line x1="825.13" y1="414.00" x2="825.13" y2="526.00" class="marker"/>
+<text x="825.13" y="407.00" class="annotation" text-anchor="middle">13</text>
+<line x1="878.51" y1="414.00" x2="878.51" y2="526.00" class="marker"/>
+<text x="878.51" y="407.00" class="annotation" text-anchor="middle">17</text>
+<line x1="931.88" y1="414.00" x2="931.88" y2="526.00" class="marker"/>
+<text x="931.88" y="407.00" class="annotation" text-anchor="middle">21</text>
+<line x1="985.25" y1="414.00" x2="985.25" y2="526.00" class="marker"/>
+<text x="985.25" y="407.00" class="annotation" text-anchor="middle">25</text>
+<line x1="1038.63" y1="414.00" x2="1038.63" y2="526.00" class="marker"/>
+<text x="1038.63" y="407.00" class="annotation" text-anchor="middle">29</text>
+<line x1="1078.66" y1="414.00" x2="1078.66" y2="526.00" class="marker"/>
+<text x="1078.66" y="407.00" class="annotation" text-anchor="middle">32</text>
+<text x="635.00" y="432.00" class="signal" text-anchor="end">CS3#</text>
+<line x1="645.00" y1="420.00" x2="651.67" y2="420.00" class="digital"/>
+<line x1="651.67" y1="420.00" x2="651.67" y2="436.00" class="digital"/>
+<line x1="651.67" y1="436.00" x2="1085.33" y2="436.00" class="digital"/>
+<line x1="1085.33" y1="436.00" x2="1085.33" y2="420.00" class="digital"/>
+<line x1="1085.33" y1="420.00" x2="1092.00" y2="420.00" class="digital"/>
+<text x="635.00" y="460.00" class="signal" text-anchor="end">SCLK</text>
+<line x1="645.00" y1="448.00" x2="658.34" y2="448.00" class="digital"/>
+<line x1="658.34" y1="448.00" x2="658.34" y2="464.00" class="digital"/>
+<line x1="658.34" y1="464.00" x2="665.01" y2="464.00" class="digital"/>
+<line x1="665.01" y1="464.00" x2="665.01" y2="448.00" class="digital"/>
+<line x1="665.01" y1="448.00" x2="671.69" y2="448.00" class="digital"/>
+<line x1="671.69" y1="448.00" x2="671.69" y2="464.00" class="digital"/>
+<line x1="671.69" y1="464.00" x2="678.36" y2="464.00" class="digital"/>
+<line x1="678.36" y1="464.00" x2="678.36" y2="448.00" class="digital"/>
+<line x1="678.36" y1="448.00" x2="685.03" y2="448.00" class="digital"/>
+<line x1="685.03" y1="448.00" x2="685.03" y2="464.00" class="digital"/>
+<line x1="685.03" y1="464.00" x2="691.70" y2="464.00" class="digital"/>
+<line x1="691.70" y1="464.00" x2="691.70" y2="448.00" class="digital"/>
+<line x1="691.70" y1="448.00" x2="698.37" y2="448.00" class="digital"/>
+<line x1="698.37" y1="448.00" x2="698.37" y2="464.00" class="digital"/>
+<line x1="698.37" y1="464.00" x2="705.04" y2="464.00" class="digital"/>
+<line x1="705.04" y1="464.00" x2="705.04" y2="448.00" class="digital"/>
+<line x1="705.04" y1="448.00" x2="711.72" y2="448.00" class="digital"/>
+<line x1="711.72" y1="448.00" x2="711.72" y2="464.00" class="digital"/>
+<line x1="711.72" y1="464.00" x2="718.39" y2="464.00" class="digital"/>
+<line x1="718.39" y1="464.00" x2="718.39" y2="448.00" class="digital"/>
+<line x1="718.39" y1="448.00" x2="725.06" y2="448.00" class="digital"/>
+<line x1="725.06" y1="448.00" x2="725.06" y2="464.00" class="digital"/>
+<line x1="725.06" y1="464.00" x2="731.73" y2="464.00" class="digital"/>
+<line x1="731.73" y1="464.00" x2="731.73" y2="448.00" class="digital"/>
+<line x1="731.73" y1="448.00" x2="738.40" y2="448.00" class="digital"/>
+<line x1="738.40" y1="448.00" x2="738.40" y2="464.00" class="digital"/>
+<line x1="738.40" y1="464.00" x2="745.07" y2="464.00" class="digital"/>
+<line x1="745.07" y1="464.00" x2="745.07" y2="448.00" class="digital"/>
+<line x1="745.07" y1="448.00" x2="751.75" y2="448.00" class="digital"/>
+<line x1="751.75" y1="448.00" x2="751.75" y2="464.00" class="digital"/>
+<line x1="751.75" y1="464.00" x2="758.42" y2="464.00" class="digital"/>
+<line x1="758.42" y1="464.00" x2="758.42" y2="448.00" class="digital"/>
+<line x1="758.42" y1="448.00" x2="765.09" y2="448.00" class="digital"/>
+<line x1="765.09" y1="448.00" x2="765.09" y2="464.00" class="digital"/>
+<line x1="765.09" y1="464.00" x2="771.76" y2="464.00" class="digital"/>
+<line x1="771.76" y1="464.00" x2="771.76" y2="448.00" class="digital"/>
+<line x1="771.76" y1="448.00" x2="778.43" y2="448.00" class="digital"/>
+<line x1="778.43" y1="448.00" x2="778.43" y2="464.00" class="digital"/>
+<line x1="778.43" y1="464.00" x2="785.10" y2="464.00" class="digital"/>
+<line x1="785.10" y1="464.00" x2="785.10" y2="448.00" class="digital"/>
+<line x1="785.10" y1="448.00" x2="791.78" y2="448.00" class="digital"/>
+<line x1="791.78" y1="448.00" x2="791.78" y2="464.00" class="digital"/>
+<line x1="791.78" y1="464.00" x2="798.45" y2="464.00" class="digital"/>
+<line x1="798.45" y1="464.00" x2="798.45" y2="448.00" class="digital"/>
+<line x1="798.45" y1="448.00" x2="805.12" y2="448.00" class="digital"/>
+<line x1="805.12" y1="448.00" x2="805.12" y2="464.00" class="digital"/>
+<line x1="805.12" y1="464.00" x2="811.79" y2="464.00" class="digital"/>
+<line x1="811.79" y1="464.00" x2="811.79" y2="448.00" class="digital"/>
+<line x1="811.79" y1="448.00" x2="818.46" y2="448.00" class="digital"/>
+<line x1="818.46" y1="448.00" x2="818.46" y2="464.00" class="digital"/>
+<line x1="818.46" y1="464.00" x2="825.13" y2="464.00" class="digital"/>
+<line x1="825.13" y1="464.00" x2="825.13" y2="448.00" class="digital"/>
+<line x1="825.13" y1="448.00" x2="831.81" y2="448.00" class="digital"/>
+<line x1="831.81" y1="448.00" x2="831.81" y2="464.00" class="digital"/>
+<line x1="831.81" y1="464.00" x2="838.48" y2="464.00" class="digital"/>
+<line x1="838.48" y1="464.00" x2="838.48" y2="448.00" class="digital"/>
+<line x1="838.48" y1="448.00" x2="845.15" y2="448.00" class="digital"/>
+<line x1="845.15" y1="448.00" x2="845.15" y2="464.00" class="digital"/>
+<line x1="845.15" y1="464.00" x2="851.82" y2="464.00" class="digital"/>
+<line x1="851.82" y1="464.00" x2="851.82" y2="448.00" class="digital"/>
+<line x1="851.82" y1="448.00" x2="858.49" y2="448.00" class="digital"/>
+<line x1="858.49" y1="448.00" x2="858.49" y2="464.00" class="digital"/>
+<line x1="858.49" y1="464.00" x2="865.16" y2="464.00" class="digital"/>
+<line x1="865.16" y1="464.00" x2="865.16" y2="448.00" class="digital"/>
+<line x1="865.16" y1="448.00" x2="871.84" y2="448.00" class="digital"/>
+<line x1="871.84" y1="448.00" x2="871.84" y2="464.00" class="digital"/>
+<line x1="871.84" y1="464.00" x2="878.51" y2="464.00" class="digital"/>
+<line x1="878.51" y1="464.00" x2="878.51" y2="448.00" class="digital"/>
+<line x1="878.51" y1="448.00" x2="885.18" y2="448.00" class="digital"/>
+<line x1="885.18" y1="448.00" x2="885.18" y2="464.00" class="digital"/>
+<line x1="885.18" y1="464.00" x2="891.85" y2="464.00" class="digital"/>
+<line x1="891.85" y1="464.00" x2="891.85" y2="448.00" class="digital"/>
+<line x1="891.85" y1="448.00" x2="898.52" y2="448.00" class="digital"/>
+<line x1="898.52" y1="448.00" x2="898.52" y2="464.00" class="digital"/>
+<line x1="898.52" y1="464.00" x2="905.19" y2="464.00" class="digital"/>
+<line x1="905.19" y1="464.00" x2="905.19" y2="448.00" class="digital"/>
+<line x1="905.19" y1="448.00" x2="911.87" y2="448.00" class="digital"/>
+<line x1="911.87" y1="448.00" x2="911.87" y2="464.00" class="digital"/>
+<line x1="911.87" y1="464.00" x2="918.54" y2="464.00" class="digital"/>
+<line x1="918.54" y1="464.00" x2="918.54" y2="448.00" class="digital"/>
+<line x1="918.54" y1="448.00" x2="925.21" y2="448.00" class="digital"/>
+<line x1="925.21" y1="448.00" x2="925.21" y2="464.00" class="digital"/>
+<line x1="925.21" y1="464.00" x2="931.88" y2="464.00" class="digital"/>
+<line x1="931.88" y1="464.00" x2="931.88" y2="448.00" class="digital"/>
+<line x1="931.88" y1="448.00" x2="938.55" y2="448.00" class="digital"/>
+<line x1="938.55" y1="448.00" x2="938.55" y2="464.00" class="digital"/>
+<line x1="938.55" y1="464.00" x2="945.22" y2="464.00" class="digital"/>
+<line x1="945.22" y1="464.00" x2="945.22" y2="448.00" class="digital"/>
+<line x1="945.22" y1="448.00" x2="951.90" y2="448.00" class="digital"/>
+<line x1="951.90" y1="448.00" x2="951.90" y2="464.00" class="digital"/>
+<line x1="951.90" y1="464.00" x2="958.57" y2="464.00" class="digital"/>
+<line x1="958.57" y1="464.00" x2="958.57" y2="448.00" class="digital"/>
+<line x1="958.57" y1="448.00" x2="965.24" y2="448.00" class="digital"/>
+<line x1="965.24" y1="448.00" x2="965.24" y2="464.00" class="digital"/>
+<line x1="965.24" y1="464.00" x2="971.91" y2="464.00" class="digital"/>
+<line x1="971.91" y1="464.00" x2="971.91" y2="448.00" class="digital"/>
+<line x1="971.91" y1="448.00" x2="978.58" y2="448.00" class="digital"/>
+<line x1="978.58" y1="448.00" x2="978.58" y2="464.00" class="digital"/>
+<line x1="978.58" y1="464.00" x2="985.25" y2="464.00" class="digital"/>
+<line x1="985.25" y1="464.00" x2="985.25" y2="448.00" class="digital"/>
+<line x1="985.25" y1="448.00" x2="991.93" y2="448.00" class="digital"/>
+<line x1="991.93" y1="448.00" x2="991.93" y2="464.00" class="digital"/>
+<line x1="991.93" y1="464.00" x2="998.60" y2="464.00" class="digital"/>
+<line x1="998.60" y1="464.00" x2="998.60" y2="448.00" class="digital"/>
+<line x1="998.60" y1="448.00" x2="1005.27" y2="448.00" class="digital"/>
+<line x1="1005.27" y1="448.00" x2="1005.27" y2="464.00" class="digital"/>
+<line x1="1005.27" y1="464.00" x2="1011.94" y2="464.00" class="digital"/>
+<line x1="1011.94" y1="464.00" x2="1011.94" y2="448.00" class="digital"/>
+<line x1="1011.94" y1="448.00" x2="1018.61" y2="448.00" class="digital"/>
+<line x1="1018.61" y1="448.00" x2="1018.61" y2="464.00" class="digital"/>
+<line x1="1018.61" y1="464.00" x2="1025.28" y2="464.00" class="digital"/>
+<line x1="1025.28" y1="464.00" x2="1025.28" y2="448.00" class="digital"/>
+<line x1="1025.28" y1="448.00" x2="1031.96" y2="448.00" class="digital"/>
+<line x1="1031.96" y1="448.00" x2="1031.96" y2="464.00" class="digital"/>
+<line x1="1031.96" y1="464.00" x2="1038.63" y2="464.00" class="digital"/>
+<line x1="1038.63" y1="464.00" x2="1038.63" y2="448.00" class="digital"/>
+<line x1="1038.63" y1="448.00" x2="1045.30" y2="448.00" class="digital"/>
+<line x1="1045.30" y1="448.00" x2="1045.30" y2="464.00" class="digital"/>
+<line x1="1045.30" y1="464.00" x2="1051.97" y2="464.00" class="digital"/>
+<line x1="1051.97" y1="464.00" x2="1051.97" y2="448.00" class="digital"/>
+<line x1="1051.97" y1="448.00" x2="1058.64" y2="448.00" class="digital"/>
+<line x1="1058.64" y1="448.00" x2="1058.64" y2="464.00" class="digital"/>
+<line x1="1058.64" y1="464.00" x2="1065.31" y2="464.00" class="digital"/>
+<line x1="1065.31" y1="464.00" x2="1065.31" y2="448.00" class="digital"/>
+<line x1="1065.31" y1="448.00" x2="1071.99" y2="448.00" class="digital"/>
+<line x1="1071.99" y1="448.00" x2="1071.99" y2="464.00" class="digital"/>
+<line x1="1071.99" y1="464.00" x2="1078.66" y2="464.00" class="digital"/>
+<line x1="1078.66" y1="464.00" x2="1078.66" y2="448.00" class="digital"/>
+<line x1="1078.66" y1="448.00" x2="1092.00" y2="448.00" class="digital"/>
+<text x="635.00" y="488.00" class="signal" text-anchor="end">MOSI</text>
+<line x1="645.00" y1="492.00" x2="658.34" y2="492.00" class="digital"/>
+<line x1="658.34" y1="492.00" x2="658.34" y2="476.00" class="digital"/>
+<line x1="658.34" y1="476.00" x2="671.69" y2="476.00" class="digital"/>
+<line x1="671.69" y1="476.00" x2="671.69" y2="492.00" class="digital"/>
+<line x1="671.69" y1="492.00" x2="698.37" y2="492.00" class="digital"/>
+<line x1="698.37" y1="492.00" x2="698.37" y2="476.00" class="digital"/>
+<line x1="698.37" y1="476.00" x2="711.72" y2="476.00" class="digital"/>
+<line x1="711.72" y1="476.00" x2="711.72" y2="492.00" class="digital"/>
+<line x1="711.72" y1="492.00" x2="725.06" y2="492.00" class="digital"/>
+<line x1="725.06" y1="492.00" x2="725.06" y2="476.00" class="digital"/>
+<line x1="725.06" y1="476.00" x2="751.75" y2="476.00" class="digital"/>
+<line x1="751.75" y1="476.00" x2="751.75" y2="492.00" class="digital"/>
+<line x1="751.75" y1="492.00" x2="978.58" y2="492.00" class="digital"/>
+<line x1="978.58" y1="492.00" x2="978.58" y2="476.00" class="digital"/>
+<line x1="978.58" y1="476.00" x2="991.93" y2="476.00" class="digital"/>
+<line x1="991.93" y1="476.00" x2="991.93" y2="492.00" class="digital"/>
+<line x1="991.93" y1="492.00" x2="1058.64" y2="492.00" class="digital"/>
+<line x1="1058.64" y1="492.00" x2="1058.64" y2="476.00" class="digital"/>
+<line x1="1058.64" y1="476.00" x2="1071.99" y2="476.00" class="digital"/>
+<line x1="1071.99" y1="476.00" x2="1071.99" y2="492.00" class="digital"/>
+<line x1="1071.99" y1="492.00" x2="1092.00" y2="492.00" class="digital"/>
+<text x="635.00" y="516.00" class="signal" text-anchor="end">MISO</text>
+<line x1="645.00" y1="520.00" x2="659.01" y2="520.00" class="digital"/>
+<line x1="659.01" y1="520.00" x2="659.01" y2="504.00" class="digital"/>
+<line x1="659.01" y1="504.00" x2="685.70" y2="504.00" class="digital"/>
+<line x1="685.70" y1="504.00" x2="685.70" y2="520.00" class="digital"/>
+<line x1="685.70" y1="520.00" x2="699.04" y2="520.00" class="digital"/>
+<line x1="699.04" y1="520.00" x2="699.04" y2="504.00" class="digital"/>
+<line x1="699.04" y1="504.00" x2="712.38" y2="504.00" class="digital"/>
+<line x1="712.38" y1="504.00" x2="712.38" y2="520.00" class="digital"/>
+<line x1="712.38" y1="520.00" x2="725.73" y2="520.00" class="digital"/>
+<line x1="725.73" y1="520.00" x2="725.73" y2="504.00" class="digital"/>
+<line x1="725.73" y1="504.00" x2="739.07" y2="504.00" class="digital"/>
+<line x1="739.07" y1="504.00" x2="739.07" y2="520.00" class="digital"/>
+<line x1="739.07" y1="520.00" x2="752.41" y2="520.00" class="digital"/>
+<line x1="752.41" y1="520.00" x2="752.41" y2="504.00" class="digital"/>
+<line x1="752.41" y1="504.00" x2="765.76" y2="504.00" class="digital"/>
+<line x1="765.76" y1="504.00" x2="765.76" y2="520.00" class="digital"/>
+<line x1="765.76" y1="520.00" x2="792.44" y2="520.00" class="digital"/>
+<line x1="792.44" y1="520.00" x2="792.44" y2="504.00" class="digital"/>
+<line x1="792.44" y1="504.00" x2="805.79" y2="504.00" class="digital"/>
+<line x1="805.79" y1="504.00" x2="805.79" y2="520.00" class="digital"/>
+<line x1="805.79" y1="520.00" x2="832.47" y2="520.00" class="digital"/>
+<line x1="832.47" y1="520.00" x2="832.47" y2="504.00" class="digital"/>
+<line x1="832.47" y1="504.00" x2="859.16" y2="504.00" class="digital"/>
+<line x1="859.16" y1="504.00" x2="859.16" y2="520.00" class="digital"/>
+<line x1="859.16" y1="520.00" x2="872.50" y2="520.00" class="digital"/>
+<line x1="872.50" y1="520.00" x2="872.50" y2="504.00" class="digital"/>
+<line x1="872.50" y1="504.00" x2="885.85" y2="504.00" class="digital"/>
+<line x1="885.85" y1="504.00" x2="885.85" y2="520.00" class="digital"/>
+<line x1="885.85" y1="520.00" x2="939.22" y2="520.00" class="digital"/>
+<line x1="939.22" y1="520.00" x2="939.22" y2="504.00" class="digital"/>
+<line x1="939.22" y1="504.00" x2="952.56" y2="504.00" class="digital"/>
+<line x1="952.56" y1="504.00" x2="952.56" y2="520.00" class="digital"/>
+<line x1="952.56" y1="520.00" x2="979.25" y2="520.00" class="digital"/>
+<line x1="979.25" y1="520.00" x2="979.25" y2="504.00" class="digital"/>
+<line x1="979.25" y1="504.00" x2="1019.28" y2="504.00" class="digital"/>
+<line x1="1019.28" y1="504.00" x2="1019.28" y2="520.00" class="digital"/>
+<line x1="1019.28" y1="520.00" x2="1045.97" y2="520.00" class="digital"/>
+<line x1="1045.97" y1="520.00" x2="1045.97" y2="504.00" class="digital"/>
+<line x1="1045.97" y1="504.00" x2="1086.00" y2="504.00" class="digital"/>
+<line x1="1086.00" y1="504.00" x2="1086.00" y2="520.00" class="digital"/>
+<line x1="1086.00" y1="520.00" x2="1092.00" y2="520.00" class="digital"/>
+</svg>

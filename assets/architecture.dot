@@ -1,0 +1,57 @@
+digraph regipulse {
+    graph [
+        rankdir=LR, bgcolor="#f8fafc", pad=0.23, nodesep=0.22, ranksep=0.45,
+        fontname="DejaVu Sans", fontsize=12, fontcolor="#172b42"
+    ];
+    node [
+        shape=box, style="rounded,filled", color="#587087", fillcolor="#ffffff",
+        fontname="DejaVu Sans", fontsize=12, fontcolor="#172b42",
+        penwidth=1.25, margin="0.15,0.10"
+    ];
+    edge [
+        color="#4e6479", penwidth=1.2, arrowsize=0.65, fontname="DejaVu Sans",
+        fontsize=9, fontcolor="#344b62"
+    ];
+
+    apb [label="APB4\nbridge", fillcolor="#e8f0f7"];
+    axil [label="AXI4-Lite\nbridge", fillcolor="#e8f0f7"];
+    spi [label="SPI\ntarget", fillcolor="#e0f1ec", color="#467566"];
+    irq [label="IRQ", fillcolor="#f8eccc", color="#8e6a2c"];
+
+    subgraph cluster_core {
+        label="RegiPulse core";
+        labeljust=l;
+        labelloc=t;
+        style="rounded,filled";
+        fillcolor="#edf3f8";
+        color="#829ab2";
+        penwidth=1.25;
+        margin=15;
+
+        registers [label="Register bank\nand command decode"];
+        tx [label="TX FIFO"];
+        rx [label="RX FIFO"];
+        shifter [label="SPI engine\nand divider", fillcolor="#e0f1ec", color="#467566"];
+        interrupt [label="Sticky events\nand interrupt mask", fillcolor="#f8eccc", color="#8e6a2c"];
+
+        registers -> tx [label="enqueue"];
+        tx -> shifter [label="TX word"];
+        registers -> shifter [label="config, commands"];
+        rx -> shifter [dir=back, label="RX word"];
+        registers -> rx [dir=back, label="read / pop"];
+        registers -> interrupt [dir=both, label="status / control"];
+        shifter -> interrupt [label="completion", constraint=false];
+
+        {rank=same; tx; rx; tx -> rx [style=invis];}
+        {rank=same; shifter; interrupt;}
+    }
+
+    apb -> registers [dir=both, label="register port"];
+    axil -> registers [dir=both, label="register port"];
+    shifter -> spi [label="SCLK, MOSI, CS_N"];
+    spi -> shifter [label="MISO", constraint=false];
+    interrupt -> irq;
+
+    {rank=same; apb; axil;}
+    {rank=same; spi; irq;}
+}

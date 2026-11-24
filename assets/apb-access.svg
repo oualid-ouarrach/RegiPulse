@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="928" viewBox="0 0 1140 928" role="img">
+<title>APB register accesses</title>
+<desc>Directed simulation VCD · bus vectors are hexadecimal. Values and timing are derived from the directed simulation VCD.</desc>
+<style>
+text { font-family: system-ui, sans-serif; fill: #17273b; }
+.canvas { fill: #fff; }
+.panel { fill: #f7f9fc; stroke: #d7e1ec; }
+.title { font-size: 30px; font-weight: 650; }
+.source { font-size: 14px; fill: #465b71; }
+.panel-title { font-size: 19px; font-weight: 650; }
+.subtitle { font-size: 13px; fill: #40576f; }
+.signal, .value, .tick, .annotation { font-family: ui-monospace, monospace; }
+.signal { font-size: 13px; font-weight: 600; }
+.value, .tick, .annotation { font-size: 11px; }
+.tick { fill: #465b71; }
+.annotation { fill: #985117; font-weight: 650; }
+.grid { stroke: #dce4ef; stroke-width: 1; }
+.digital { stroke: #164974; stroke-width: 1.8; }
+.undefined { stroke: #647789; stroke-width: 1.5; stroke-dasharray: 3 3; }
+.bus { fill: #e8f1fb; stroke: #537798; stroke-width: 1; }
+.marker { stroke: #ab6b36; stroke-width: 1; stroke-dasharray: 4 3; }
+</style>
+<rect width="100%" height="100%" class="canvas"/>
+<text x="22.00" y="43.00" class="title" text-anchor="start">APB register accesses</text>
+<text x="22.00" y="70.00" class="source" text-anchor="start">Directed simulation VCD · bus vectors are hexadecimal</text>
+<rect x="22.00" y="100" width="1096.00" height="398" rx="7" class="panel"/>
+<text x="37.00" y="126.00" class="panel-title" text-anchor="start">Byte-strobe write</text>
+<text x="37.00" y="146.00" class="subtitle" text-anchor="start">Write at 0x004 · PSTRB 0x1 · PSLVERR 0 at the accepting clock edge</text>
+<line x1="113.00" y1="168.00" x2="113.00" y2="448.00" class="grid"/>
+<text x="113.00" y="464.00" class="tick" text-anchor="middle">265</text>
+<line x1="194.58" y1="168.00" x2="194.58" y2="448.00" class="grid"/>
+<text x="194.58" y="464.00" class="tick" text-anchor="middle">267.5</text>
+<line x1="276.17" y1="168.00" x2="276.17" y2="448.00" class="grid"/>
+<text x="276.17" y="464.00" class="tick" text-anchor="middle">270</text>
+<line x1="357.75" y1="168.00" x2="357.75" y2="448.00" class="grid"/>
+<text x="357.75" y="464.00" class="tick" text-anchor="middle">272.5</text>
+<line x1="439.33" y1="168.00" x2="439.33" y2="448.00" class="grid"/>
+<text x="439.33" y="464.00" class="tick" text-anchor="middle">275</text>
+<line x1="520.92" y1="168.00" x2="520.92" y2="448.00" class="grid"/>
+<text x="520.92" y="464.00" class="tick" text-anchor="middle">277.5</text>
+<line x1="602.50" y1="168.00" x2="602.50" y2="448.00" class="grid"/>
+<text x="602.50" y="464.00" class="tick" text-anchor="middle">280</text>
+<line x1="684.08" y1="168.00" x2="684.08" y2="448.00" class="grid"/>
+<text x="684.08" y="464.00" class="tick" text-anchor="middle">282.5</text>
+<line x1="765.67" y1="168.00" x2="765.67" y2="448.00" class="grid"/>
+<text x="765.67" y="464.00" class="tick" text-anchor="middle">285</text>
+<line x1="847.25" y1="168.00" x2="847.25" y2="448.00" class="grid"/>
+<text x="847.25" y="464.00" class="tick" text-anchor="middle">287.5</text>
+<line x1="928.83" y1="168.00" x2="928.83" y2="448.00" class="grid"/>
+<text x="928.83" y="464.00" class="tick" text-anchor="middle">290</text>
+<line x1="1010.42" y1="168.00" x2="1010.42" y2="448.00" class="grid"/>
+<text x="1010.42" y="464.00" class="tick" text-anchor="middle">292.5</text>
+<line x1="1092.00" y1="168.00" x2="1092.00" y2="448.00" class="grid"/>
+<text x="1092.00" y="464.00" class="tick" text-anchor="middle">295</text>
+<text x="1092.00" y="481.00" class="tick" text-anchor="end">Simulation time (ns)</text>
+<line x1="765.67" y1="168.00" x2="765.67" y2="448.00" class="marker"/>
+<text x="765.67" y="161.00" class="annotation" text-anchor="middle">Transfer</text>
+<text x="103.00" y="186.00" class="signal" text-anchor="end">PCLK</text>
+<line x1="113.00" y1="174.00" x2="276.17" y2="174.00" class="digital"/>
+<line x1="276.17" y1="174.00" x2="276.17" y2="190.00" class="digital"/>
+<line x1="276.17" y1="190.00" x2="439.33" y2="190.00" class="digital"/>
+<line x1="439.33" y1="190.00" x2="439.33" y2="174.00" class="digital"/>
+<line x1="439.33" y1="174.00" x2="602.50" y2="174.00" class="digital"/>
+<line x1="602.50" y1="174.00" x2="602.50" y2="190.00" class="digital"/>
+<line x1="602.50" y1="190.00" x2="765.67" y2="190.00" class="digital"/>
+<line x1="765.67" y1="190.00" x2="765.67" y2="174.00" class="digital"/>
+<line x1="765.67" y1="174.00" x2="928.83" y2="174.00" class="digital"/>
+<line x1="928.83" y1="174.00" x2="928.83" y2="190.00" class="digital"/>
+<line x1="928.83" y1="190.00" x2="1092.00" y2="190.00" class="digital"/>
+<text x="103.00" y="214.00" class="signal" text-anchor="end">PSEL</text>
+<line x1="113.00" y1="218.00" x2="276.17" y2="218.00" class="digital"/>
+<line x1="276.17" y1="218.00" x2="276.17" y2="202.00" class="digital"/>
+<line x1="276.17" y1="202.00" x2="1092.00" y2="202.00" class="digital"/>
+<text x="103.00" y="242.00" class="signal" text-anchor="end">PENABLE</text>
+<line x1="113.00" y1="246.00" x2="602.50" y2="246.00" class="digital"/>
+<line x1="602.50" y1="246.00" x2="602.50" y2="230.00" class="digital"/>
+<line x1="602.50" y1="230.00" x2="928.83" y2="230.00" class="digital"/>
+<line x1="928.83" y1="230.00" x2="928.83" y2="246.00" class="digital"/>
+<line x1="928.83" y1="246.00" x2="1092.00" y2="246.00" class="digital"/>
+<text x="103.00" y="270.00" class="signal" text-anchor="end">PWRITE</text>
+<line x1="113.00" y1="274.00" x2="276.17" y2="274.00" class="digital"/>
+<line x1="276.17" y1="274.00" x2="276.17" y2="258.00" class="digital"/>
+<line x1="276.17" y1="258.00" x2="928.83" y2="258.00" class="digital"/>
+<line x1="928.83" y1="258.00" x2="928.83" y2="274.00" class="digital"/>
+<line x1="928.83" y1="274.00" x2="1092.00" y2="274.00" class="digital"/>
+<text x="103.00" y="298.00" class="signal" text-anchor="end">PADDR</text>
+<polygon points="113.00,294.00 116.00,286.00 273.17,286.00 276.17,294.00 273.17,302.00 116.00,302.00" class="bus"/>
+<text x="194.58" y="298.00" class="value" text-anchor="middle">024</text>
+<polygon points="276.17,294.00 279.17,286.00 1089.00,286.00 1092.00,294.00 1089.00,302.00 279.17,302.00" class="bus"/>
+<text x="684.08" y="298.00" class="value" text-anchor="middle">004</text>
+<text x="103.00" y="326.00" class="signal" text-anchor="end">PSTRB</text>
+<polygon points="113.00,322.00 116.00,314.00 273.17,314.00 276.17,322.00 273.17,330.00 116.00,330.00" class="bus"/>
+<text x="194.58" y="326.00" class="value" text-anchor="middle">0</text>
+<polygon points="276.17,322.00 279.17,314.00 925.83,314.00 928.83,322.00 925.83,330.00 279.17,330.00" class="bus"/>
+<text x="602.50" y="326.00" class="value" text-anchor="middle">1</text>
+<polygon points="928.83,322.00 931.83,314.00 1089.00,314.00 1092.00,322.00 1089.00,330.00 931.83,330.00" class="bus"/>
+<text x="1010.42" y="326.00" class="value" text-anchor="middle">0</text>
+<text x="103.00" y="354.00" class="signal" text-anchor="end">PWDATA</text>
+<polygon points="113.00,350.00 116.00,342.00 273.17,342.00 276.17,350.00 273.17,358.00 116.00,358.00" class="bus"/>
+<text x="194.58" y="354.00" class="value" text-anchor="middle">00000000</text>
+<polygon points="276.17,350.00 279.17,342.00 925.83,342.00 928.83,350.00 925.83,358.00 279.17,358.00" class="bus"/>
+<text x="602.50" y="354.00" class="value" text-anchor="middle">FFFF00A5</text>
+<polygon points="928.83,350.00 931.83,342.00 1089.00,342.00 1092.00,350.00 1089.00,358.00 931.83,358.00" class="bus"/>
+<text x="1010.42" y="354.00" class="value" text-anchor="middle">00000000</text>
+<text x="103.00" y="382.00" class="signal" text-anchor="end">PRDATA</text>
+<polygon points="113.00,378.00 116.00,370.00 1089.00,370.00 1092.00,378.00 1089.00,386.00 116.00,386.00" class="bus"/>
+<text x="602.50" y="382.00" class="value" text-anchor="middle">00000000</text>
+<text x="103.00" y="410.00" class="signal" text-anchor="end">PREADY</text>
+<line x1="113.00" y1="398.00" x2="1092.00" y2="398.00" class="digital"/>
+<text x="103.00" y="438.00" class="signal" text-anchor="end">PSLVERR</text>
+<line x1="113.00" y1="442.00" x2="1092.00" y2="442.00" class="digital"/>
+<rect x="22.00" y="514" width="1096.00" height="398" rx="7" class="panel"/>
+<text x="37.00" y="540.00" class="panel-title" text-anchor="start">Rejected unaligned access</text>
+<text x="37.00" y="560.00" class="subtitle" text-anchor="start">Read at 0x025 · PSTRB 0x0 · PSLVERR 1 at the accepting clock edge</text>
+<line x1="113.00" y1="582.00" x2="113.00" y2="862.00" class="grid"/>
+<text x="113.00" y="878.00" class="tick" text-anchor="middle">675</text>
+<line x1="194.58" y1="582.00" x2="194.58" y2="862.00" class="grid"/>
+<text x="194.58" y="878.00" class="tick" text-anchor="middle">677.5</text>
+<line x1="276.17" y1="582.00" x2="276.17" y2="862.00" class="grid"/>
+<text x="276.17" y="878.00" class="tick" text-anchor="middle">680</text>
+<line x1="357.75" y1="582.00" x2="357.75" y2="862.00" class="grid"/>
+<text x="357.75" y="878.00" class="tick" text-anchor="middle">682.5</text>
+<line x1="439.33" y1="582.00" x2="439.33" y2="862.00" class="grid"/>
+<text x="439.33" y="878.00" class="tick" text-anchor="middle">685</text>
+<line x1="520.92" y1="582.00" x2="520.92" y2="862.00" class="grid"/>
+<text x="520.92" y="878.00" class="tick" text-anchor="middle">687.5</text>
+<line x1="602.50" y1="582.00" x2="602.50" y2="862.00" class="grid"/>
+<text x="602.50" y="878.00" class="tick" text-anchor="middle">690</text>
+<line x1="684.08" y1="582.00" x2="684.08" y2="862.00" class="grid"/>
+<text x="684.08" y="878.00" class="tick" text-anchor="middle">692.5</text>
+<line x1="765.67" y1="582.00" x2="765.67" y2="862.00" class="grid"/>
+<text x="765.67" y="878.00" class="tick" text-anchor="middle">695</text>
+<line x1="847.25" y1="582.00" x2="847.25" y2="862.00" class="grid"/>
+<text x="847.25" y="878.00" class="tick" text-anchor="middle">697.5</text>
+<line x1="928.83" y1="582.00" x2="928.83" y2="862.00" class="grid"/>
+<text x="928.83" y="878.00" class="tick" text-anchor="middle">700</text>
+<line x1="1010.42" y1="582.00" x2="1010.42" y2="862.00" class="grid"/>
+<text x="1010.42" y="878.00" class="tick" text-anchor="middle">702.5</text>
+<line x1="1092.00" y1="582.00" x2="1092.00" y2="862.00" class="grid"/>
+<text x="1092.00" y="878.00" class="tick" text-anchor="middle">705</text>
+<text x="1092.00" y="895.00" class="tick" text-anchor="end">Simulation time (ns)</text>
+<line x1="765.67" y1="582.00" x2="765.67" y2="862.00" class="marker"/>
+<text x="765.67" y="575.00" class="annotation" text-anchor="middle">Transfer</text>
+<text x="103.00" y="600.00" class="signal" text-anchor="end">PCLK</text>
+<line x1="113.00" y1="588.00" x2="276.17" y2="588.00" class="digital"/>
+<line x1="276.17" y1="588.00" x2="276.17" y2="604.00" class="digital"/>
+<line x1="276.17" y1="604.00" x2="439.33" y2="604.00" class="digital"/>
+<line x1="439.33" y1="604.00" x2="439.33" y2="588.00" class="digital"/>
+<line x1="439.33" y1="588.00" x2="602.50" y2="588.00" class="digital"/>
+<line x1="602.50" y1="588.00" x2="602.50" y2="604.00" class="digital"/>
+<line x1="602.50" y1="604.00" x2="765.67" y2="604.00" class="digital"/>
+<line x1="765.67" y1="604.00" x2="765.67" y2="588.00" class="digital"/>
+<line x1="765.67" y1="588.00" x2="928.83" y2="588.00" class="digital"/>
+<line x1="928.83" y1="588.00" x2="928.83" y2="604.00" class="digital"/>
+<line x1="928.83" y1="604.00" x2="1092.00" y2="604.00" class="digital"/>
+<text x="103.00" y="628.00" class="signal" text-anchor="end">PSEL</text>
+<line x1="113.00" y1="632.00" x2="276.17" y2="632.00" class="digital"/>
+<line x1="276.17" y1="632.00" x2="276.17" y2="616.00" class="digital"/>
+<line x1="276.17" y1="616.00" x2="928.83" y2="616.00" class="digital"/>
+<line x1="928.83" y1="616.00" x2="928.83" y2="632.00" class="digital"/>
+<line x1="928.83" y1="632.00" x2="1092.00" y2="632.00" class="digital"/>
+<text x="103.00" y="656.00" class="signal" text-anchor="end">PENABLE</text>
+<line x1="113.00" y1="660.00" x2="602.50" y2="660.00" class="digital"/>
+<line x1="602.50" y1="660.00" x2="602.50" y2="644.00" class="digital"/>
+<line x1="602.50" y1="644.00" x2="928.83" y2="644.00" class="digital"/>
+<line x1="928.83" y1="644.00" x2="928.83" y2="660.00" class="digital"/>
+<line x1="928.83" y1="660.00" x2="1092.00" y2="660.00" class="digital"/>
+<text x="103.00" y="684.00" class="signal" text-anchor="end">PWRITE</text>
+<line x1="113.00" y1="688.00" x2="1092.00" y2="688.00" class="digital"/>
+<text x="103.00" y="712.00" class="signal" text-anchor="end">PADDR</text>
+<polygon points="113.00,708.00 116.00,700.00 273.17,700.00 276.17,708.00 273.17,716.00 116.00,716.00" class="bus"/>
+<text x="194.58" y="712.00" class="value" text-anchor="middle">01C</text>
+<polygon points="276.17,708.00 279.17,700.00 1089.00,700.00 1092.00,708.00 1089.00,716.00 279.17,716.00" class="bus"/>
+<text x="684.08" y="712.00" class="value" text-anchor="middle">025</text>
+<text x="103.00" y="740.00" class="signal" text-anchor="end">PSTRB</text>
+<polygon points="113.00,736.00 116.00,728.00 1089.00,728.00 1092.00,736.00 1089.00,744.00 116.00,744.00" class="bus"/>
+<text x="602.50" y="740.00" class="value" text-anchor="middle">0</text>
+<text x="103.00" y="768.00" class="signal" text-anchor="end">PWDATA</text>
+<polygon points="113.00,764.00 116.00,756.00 1089.00,756.00 1092.00,764.00 1089.00,772.00 116.00,772.00" class="bus"/>
+<text x="602.50" y="768.00" class="value" text-anchor="middle">00000000</text>
+<text x="103.00" y="796.00" class="signal" text-anchor="end">PRDATA</text>
+<polygon points="113.00,792.00 116.00,784.00 1089.00,784.00 1092.00,792.00 1089.00,800.00 116.00,800.00" class="bus"/>
+<text x="602.50" y="796.00" class="value" text-anchor="middle">00000000</text>
+<text x="103.00" y="824.00" class="signal" text-anchor="end">PREADY</text>
+<line x1="113.00" y1="812.00" x2="1092.00" y2="812.00" class="digital"/>
+<text x="103.00" y="852.00" class="signal" text-anchor="end">PSLVERR</text>
+<line x1="113.00" y1="856.00" x2="602.50" y2="856.00" class="digital"/>
+<line x1="602.50" y1="856.00" x2="602.50" y2="840.00" class="digital"/>
+<line x1="602.50" y1="840.00" x2="928.83" y2="840.00" class="digital"/>
+<line x1="928.83" y1="840.00" x2="928.83" y2="856.00" class="digital"/>
+<line x1="928.83" y1="856.00" x2="1092.00" y2="856.00" class="digital"/>
+</svg>
