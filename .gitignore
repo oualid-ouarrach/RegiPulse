@@ -2,3 +2,5 @@
 /obj_dir/
 /.toolchain/
 __pycache__/
+
+AGENTS.md
