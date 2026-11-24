@@ -1,71 +1,78 @@
-# RegiPulse — ASIC IP Design & Pre-Silicon Verification
+# RegiPulse
 
-RegiPulse is a synthesizable, full-duplex SPI master for SoCs. Integrate
-`regipulse_apb` on APB4 or `regipulse_axil` on AXI4-Lite. Both wrappers use
-the same register bank, FIFOs, interrupt logic and serial engine.
+ASIC IP Design and Pre-Silicon Verification
 
-## Development status
+RegiPulse is a configurable SPI master peripheral for SoC integration, developed in SystemVerilog. It supports two bus interfaces, APB4 and AXI4-Lite, using the same SPI core and register map.
 
-Phase 1 delivers the RTL foundation and its initial verification. See the
-[milestone tracker](reports/milestones.md) for measured results and the
-remaining work.
+The project is currently in development. The RTL and initial verification are implemented.
 
 ## Architecture
 
 ![RegiPulse architecture](assets/architecture.svg)
 
-- Four SPI modes, 1–32 bits per frame, either bit order and 1–16 chip selects.
-- Programmable clock half-period of 1–65,536 peripheral clock cycles.
-- Independent 32-bit TX and RX FIFOs with configurable depth of 1–255 entries.
-- Sticky interrupt status, write-one-to-clear events, per-source enables and
-  detection of queue errors, invalid accesses and rejected commands.
-- AXI4-Lite accepts address and data independently. Read and write responses
-  have independent backpressure. APB4 uses zero-wait-state register accesses.
+The design contains a bus interface, a register bank, TX and RX FIFOs, an SPI engine and an interrupt controller.
 
-One `START` transfers one queued word and asserts the configured chip select
-for that frame. `ABORT` terminates an active transfer and preserves queued
-data. See the [specification](docs/specification.md) and
-[integration details](docs/architecture.md) for timing and reset behavior.
+### Main features
+
+- Full-duplex SPI communication with modes 0, 1, 2 and 3.
+- Configurable frame size from 1 to 32 bits and MSB-first or LSB-first transmission.
+- Programmable SPI clock divider and 1 to 16 chip selects.
+- Separate 32-bit TX and RX FIFOs, configurable from 1 to 255 entries each.
+- Interrupts for transfer completion, FIFO errors, invalid accesses and aborted transfers.
+- APB4 zero-wait-state accesses and independent AXI4-Lite read and write channels with backpressure support.
+
+One START command transfers one word from the TX FIFO. The received word is stored in the RX FIFO. An active transfer can be aborted without clearing the remaining queued data.
 
 ## Register map
 
-| Offset | Register | Access | Purpose |
+| Offset | Register | Access | Description |
 | --- | --- | --- | --- |
-| `0x00` | `CTRL` | RW | SPI mode, bit order, frame length and chip select |
-| `0x04` | `DIV` | RW | SCLK half-period in peripheral clock cycles minus one |
-| `0x08` | `CMD` | WO | Start, flush either FIFO or abort |
-| `0x0c` | `STATUS` | RO | Busy and FIFO flags |
-| `0x10` / `0x14` | `TXDATA` / `RXDATA` | WO / RO | Push TX or pop RX |
-| `0x18` | `LEVEL` | RO | TX and RX entry counts |
-| `0x1c` / `0x20` | `IRQ_STATUS` / `IRQ_ENABLE` | W1C / RW | Pending events and masks |
-| `0x24` | `ID` | RO | Peripheral and register-map revision ID |
+| 0x00 | CTRL | RW | SPI mode, frame size, bit order and chip select |
+| 0x04 | DIV | RW | SPI clock divider |
+| 0x08 | CMD | WO | Start, abort and FIFO flush |
+| 0x0C | STATUS | RO | Busy and FIFO status |
+| 0x10 | TXDATA | WO | Write data to TX FIFO |
+| 0x14 | RXDATA | RO | Read and pop data from RX FIFO |
+| 0x18 | LEVEL | RO | FIFO entry counts |
+| 0x1C | IRQ_STATUS | W1C | Pending interrupt flags |
+| 0x20 | IRQ_ENABLE | RW | Interrupt enable bits |
+| 0x24 | ID | RO | Peripheral identification |
 
-The [register map](docs/register-map.md) defines field encodings, byte strobes
-and error responses.
+RW: read/write, RO: read-only, WO: write-only, W1C: write one to clear.
 
 ## Verification
 
-Component tests exercise FIFO boundary depths and SPI edge timing. The
-integration test drives both bus interfaces and compares the serial data to
-an independent SPI slave model. Verilator enables bound assertions for
-completion, reset, IRQ priority and AXI response stability. The UVM smoke
-uses an APB sequencer, driver, monitor and scoreboard with the simulated RTL.
+The RTL is tested using self-checking SystemVerilog testbenches, an independent SPI slave model and SystemVerilog Assertions (SVA). An initial UVM environment includes an APB agent, sequencer, driver, monitor and scoreboard.
 
-![SPI waveforms for modes 0–3](assets/spi-modes.svg)
+| Check | Result |
+| --- | --- |
+| Verilator lint | Passed for both bus interfaces |
+| FIFO component tests | Passed at depths 1, 3 and 255 |
+| SPI component tests | 10 frames passed, including maximum divider |
+| Directed integration tests | 13 scenarios passed on Verilator and Icarus |
+| SVA | 12 properties checked with Verilator |
+| UVM smoke test | 13 APB transactions, 1 SPI frame, 0 errors and 0 fatals |
+| Yosys structural checks | 0 problems reported for both wrappers |
 
-See the [verification plan](docs/verification-plan.md) and
-[requirements matrix](docs/traceability.md).
+The directed tests cover the four SPI modes, bus transactions, FIFO boundaries, interrupt handling, AXI backpressure, abort and reset during a transfer.
 
-The component bench checks FIFO depths 1, 3 and 255, 10 SPI frames and the
-maximum divider. Verilator and Icarus passed 13 integration scenarios covering
-FIFO edge races, concurrent AXI channels and reset during a transfer.
-The UVM smoke passed 13 APB transfers and one independently checked SPI frame
-with zero UVM errors or fatals.
-Yosys elaboration and structural checks reported zero problems for both
-wrappers. The [milestone tracker](reports/milestones.md) records the tool
-versions and results.
+The UVM and Yosys results are recorded development results. GitHub Actions currently runs lint and the directed RTL tests with both simulators.
 
-## Reproduce
+### Simulation waveforms
+
+![SPI modes 0 to 3](assets/spi-modes.svg)
+
+![AXI4-Lite handshakes](assets/axil-handshake.svg)
+
+![FIFO and interrupt behavior](assets/fifo-interrupt.svg)
+
+## Tools
+
+SystemVerilog, UVM 2020.3.1, Verilator 5.048, Icarus Verilog 12.0, Yosys, Python, GNU Make and GitHub Actions. The flow uses free and open-source tools.
+
+## Run the tests
+
+The provided setup targets x86-64 Linux (Debian 13). From the repository root:
 
 ```sh
 ./scripts/install_simulators.sh
@@ -75,13 +82,31 @@ make test-iverilog
 make waves
 ```
 
-Use `make uvm` for the Accellera smoke and `make structural` for the Yosys
-RTL checks. The [toolchain guide](docs/toolchain.md) pins dependencies and
-describes simulator support.
+Run the UVM smoke test with `make uvm`. With Yosys installed and available on PATH, run `make structural`.
 
-## Remaining milestones
+Simulation logs and generated waveforms are saved in `build/`.
 
-The full UVM regression, coverage closure, formal verification, embedded C
-driver and RTL co-simulation are pending. The ASIC flow still needs
-technology mapping, gate-level simulation, scan, physical implementation
-and measurements for timing, power and area.
+## Project structure
+
+```text
+rtl/            SystemVerilog design
+assertions/     SVA properties
+tests/          RTL testbenches
+verification/   UVM environment
+scripts/        Setup and simulation scripts
+docs/           Design and verification documentation
+reports/        Development results
+assets/         Architecture and simulation diagrams
+```
+
+## Next steps
+
+- Extend UVM verification to AXI4-Lite and SPI, with randomized tests.
+- Measure functional and code coverage, and add formal verification.
+- Develop an embedded C driver and test it with the RTL.
+- Perform technology mapping, gate-level simulation and scan testing.
+- Explore SKY130 physical implementation and measure timing, power and area.
+
+## License
+
+Apache License 2.0.
